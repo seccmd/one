@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+export DEBIAN_FRONTEND=noninteractive
 
 exec > >(tee /var/log/system_init.log) 2>&1  # 所有输出重定向到日志
 
