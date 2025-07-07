@@ -40,7 +40,7 @@ pre_install_checks() {
 update_system() {
     echo "[$(date +'%F %T')] START SYSTEM UPDATE"
     apt update -y --fix-missing
-    apt upgrade -y --only-upgrade  # 仅升级已安装包
+    #apt upgrade -y --only-upgrade  # 仅升级已安装包
     echo "[SUCCESS] 系统更新完成"
 }
 
